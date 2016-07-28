@@ -63,13 +63,13 @@ public class Flower {
     }
 
     public void drawDebug(ShapeRenderer shapeRenderer) {
-        shapeRenderer.circle(floorCollisionCircle.x, floorCollisionCircle.y, floorCollisionCircle.radius);
-        shapeRenderer.rect(floorCollisionRectangle.x, floorCollisionRectangle.y, floorCollisionRectangle.width, floorCollisionRectangle.height);
-        shapeRenderer.circle(ceilingCollisionCircle.x, ceilingCollisionCircle.y, ceilingCollisionCircle.radius);
-        shapeRenderer.rect(ceilingCollisionRectangle.x, ceilingCollisionRectangle.y, ceilingCollisionRectangle.width, ceilingCollisionRectangle.height);
+//        shapeRenderer.circle(floorCollisionCircle.x, floorCollisionCircle.y, floorCollisionCircle.radius);
+//        shapeRenderer.rect(floorCollisionRectangle.x, floorCollisionRectangle.y, floorCollisionRectangle.width, floorCollisionRectangle.height);
+//        shapeRenderer.circle(ceilingCollisionCircle.x, ceilingCollisionCircle.y, ceilingCollisionCircle.radius);
+//        shapeRenderer.rect(ceilingCollisionRectangle.x, ceilingCollisionRectangle.y, ceilingCollisionRectangle.width, ceilingCollisionRectangle.height);
 
-//        Rectangle floorTextureOutline = new Rectangle(floorCollisionRectangle.x, floorCollisionRectangle.y, floorTexture.getWidth(), floorTexture.getHeight());
-//        shapeRenderer.rect(floorTextureOutline.x, floorTextureOutline.y, floorTextureOutline.width, floorTextureOutline.height);
+        Rectangle floorTextureOutline = new Rectangle(floorCollisionRectangle.x, floorCollisionRectangle.y, floorTexture.getWidth(), floorTexture.getHeight());
+        shapeRenderer.rect(floorTextureOutline.x, floorTextureOutline.y, floorTextureOutline.width, floorTextureOutline.height);
     }
 
     public void draw(SpriteBatch batch) {
